@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", vina-sans;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+/* :root CSS pseudo-class matches the root element of a tree representing the document.*/
+:root {
+  --second-bg-color: #202020;
+  --text-color: #ccc;
+  --main-color: #ff4d05;
+  --big-font: 5rem;
+  --h2-hont: 3rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("girl.jpg");
+  background-size: cover;
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 15%;
+  border-bottom: 1px solid transparent;
+  transition: all.45s ease;
+  background: #000000;
+  color: white;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a{
+  color: var(--second-bg-color);
+  color: #ccc;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 25px;
+  transition: all 0.45s ease;
+  cursor: pointer;
+}
+
+/* hover for motion of navbar*/
+.navlist a :hover{
+  color: var(--main-color);
+}
+
+.navlist a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+section {
+  padding: 160px 15% 120px;
+}
+
+/*
+.home
+{
+    padding: 130px 12% 90px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./alexander-krivitskiy-11868584.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+*/
+
+.slide {
+  margin-bottom: 20px;
+}
+
+.one {
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+.two {
+  display: inline-block;
+  color: var(--second-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home-text h1 {
+  font-size: var(--big-font);
+  font-weight: 700;
+  color: var(--text-color);
+  list-style: 1.1;
+  margin: 0 0 8px;
+}
+
+.home-text h3 {
+  color: var(--text-color);
+  margin: 0 0 35px;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.home-text h4 {
+  color: var(--text-color);
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.home-text p {
+  color: #eee4e4;
+  font-size: 17px;
+}
+.home-text h5 {
+  color: var(--text-color);
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all.45s ease;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.btn2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-left: 35px;
+}
+
+/*for making vedio sign*/
+
+.btn2.span i {
+  height: 55px;
+  width: 55px;
+  background: var(--main-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: all 0.45s ease;
+}
+
+.btn2 span i:hover {
+  transform: scale(1.1) translateY(5px);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: right;
+  width: 25%;
+  padding: 0 15px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(5, 5, 5, 0.2); /* this adds the "card" effect */
+    padding: 30px;
+    text-align: center;
+    height: 5cm;
+    background-color: #332f2f;
+  }
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 70%;
+    display: block;
+    margin-bottom: 70px;
+  }
+}
+
+/* Footer */
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h5 {
+  color: var(--text-color);
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+h6 {
+  font-size: medium;
+  color: white;
+}
+.card p{
+  color: white;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0;
+  bottom: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 50%;
+}
+
+.footer-left-column {
+  max-width: 400px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.footer-paragraph {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.footer-social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.footer-social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social-media li:last-child {
+  margin-right: 0;
+}
+
+.footer-social-media a {
+  color: #ffffff;
+}
+
+.footer-social-media a:hover {
+  color: #969696;
+}
+
+.footer-center-column {
+  max-width: 400px;
+}
+.footer-center-column .content .fas {
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.footer-center-column .content .fas:hover {
+  background: #1a1a1a;
+}
+.footer-center-column .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.footer-center-column .content .phone {
+  margin: 0 0;
+}
+.footer-column h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 20px;
+}
+
+.footer-right-column {
+  max-width: 300px;
+}
